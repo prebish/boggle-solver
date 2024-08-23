@@ -1,4 +1,3 @@
-
 # Boggle Solver
 
 A simple command-line Java program to solve Boggle puzzles by finding all possible words on the board, leveraging depth-first search and dictionary validation.
@@ -54,5 +53,4 @@ Upon running the program, you will be presented with the following menu options:
 Simply enter the number corresponding to your desired option and follow the prompts.
 
 ## License
-
 This project is licensed under the **MIT License** - see the `LICENSE` file for details.

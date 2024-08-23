@@ -9,8 +9,7 @@ A simple command-line Java program to solve Boggle puzzles by finding all possib
     1. [Clone the Repository](#1-clone-the-repository)
     2. [Compile the Program](#2-compile-the-program)
 - [Usage](#usage)
-    - [Generating a Boggle Board](#generating-a-boggle-board)
-    - [Finding Words](#finding-words)
+    - [Menu Options](#menu-options)
 - [License](#license)
 
 ## Installation & Setup
@@ -31,36 +30,28 @@ javac -d build ./src/*.java
 
 ## Usage
 
-This is the baseline of what you'll use to run the program. Try running it yourself.  
-The usage will print out when there are insufficient arguments.
+Run the program using the following command:
 
 ```bash
-java -cp build BoggleSolver
+java -cp build src.Main
 ```
 
-### Generating a Boggle Board
+### Menu Options
 
-#### Generate a random Boggle board with a specified size
-```bash
-java -cp build BoggleSolver -g <size>
-```
+Upon running the program, you will be presented with the following menu options:
 
-Example:
-```bash
-java -cp build BoggleSolver -g 4
-```
+*********************************
+1. **Generate a new Boggle board**: Create a random Boggle board of specified dimensions.
+2. **Load a dictionary from a file**: Load a custom dictionary file to be used for word validation.
+3. **Display the Boggle board**: Show the current Boggle board in the console.
+4. **Get number of possible words**: Find and display the total number of valid words on the board.
+5. **Get number of possible words with a certain length**: Find and display the number of words of a specific length on the board.
+6. **Check if a word is in the dictionary**: Verify if a particular word exists in the loaded dictionary.
+7. **Check if a word is feasible in the board**: Check if a specific word can be formed on the current Boggle board.
+8. **Exit**: Exit the program.
+*********************************
 
-### Finding Words
-
-#### Find all words in the generated Boggle board
-```bash
-java -cp build BoggleSolver -f
-```
-
-#### Optionally, specify a dictionary file
-```bash
-java -cp build BoggleSolver -f -d dictionary.txt
-```
+Simply enter the number corresponding to your desired option and follow the prompts.
 
 ## License
 
